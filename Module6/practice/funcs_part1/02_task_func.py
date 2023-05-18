@@ -4,7 +4,13 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+    number_input = number
+    number_invert = 0
+    while number > 0:
+        dig = number % 10
+        number_invert = number_invert * 10 + dig
+        number = number // 10
+    return number_input == number_invert
 
 
 # Тестируем функцию
