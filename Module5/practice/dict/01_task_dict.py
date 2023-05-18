@@ -11,4 +11,11 @@ item_count = 8
 # Курс доллара
 dollar_rate = 74.12
 
-# TODO: your code here
+item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub"}
+# Количество товаров
+item_count = 8
+# Курс доллара
+dollar_rate = 74.12
+
+print(f"Стоимость покупки в долларах по курсу {dollar_rate} равна {float(item['price']) * item_count * dollar_rate}")
+
